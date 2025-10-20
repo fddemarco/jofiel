@@ -40,7 +40,7 @@ import { SignalsDisplay } from '@backstage/plugin-signals';
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
 import { TechRadarPage } from '@backstage-community/plugin-tech-radar';
 import { HomePage } from './components/home/HomePage';
-import { HomapageCompositionRoot, HomepageCompositionRoot } from '@backstage/plugin-home'
+import { HomepageCompositionRoot } from '@backstage/plugin-home'
 
 
 const app = createApp({
