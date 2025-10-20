@@ -1,0 +1,7 @@
+github:
+  development:
+    clientId: ${GITHUB_OAUTH_CLIENT_ID}
+    clientSecret: ${GITHUB_OAUTH_CLIENT_SECRET}
+    signIn:
+      resolvers:
+        - resolver: usernameMatchingUserEntityName

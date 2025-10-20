@@ -67,13 +67,7 @@ auth:
   providers:
     # See https://backstage.io/docs/auth/guest/provider
     #guest: {}
-    github:
-      development:
-        clientId: ${GITHUB_OAUTH_CLIENT_ID}
-        clientSecret: ${GITHUB_OAUTH_CLIENT_SECRET}
-        signIn:
-          resolvers:
-            - resolver: usernameMatchingUserEntityName
+    $include: config/auth/providers/github-auth.yml
 
 #scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options

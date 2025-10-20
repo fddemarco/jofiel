@@ -59,12 +59,12 @@ const app = createApp({
     });
   },
   components: {
-    SignInPage: props => (<SignInPage {...props} auto providers={{
+    SignInPage: props => (<SignInPage {...props} auto providers={[{
         id: 'github-auth-provider',
         title: 'GitHub',    
         message: 'Sign in using GitHub',
         apiRef: githubAuthApiRef,
-      }} />),
+      }]} />),
   },
 });
 
