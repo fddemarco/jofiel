@@ -69,8 +69,12 @@ auth:
     #guest: {}
     $include: config/auth/providers/github-auth.yml
 
-#scaffolder:
+scaffolder:
   # see https://backstage.io/docs/features/software-templates/configuration for software template options
+  defaultAuthor:
+    name: Franco D
+    email: hammer@donthurtem.com
+  defaultCommitMessage: "Scaffolded repo"
 
 catalog:
   $include: config/catalog/local-catalog.yml
