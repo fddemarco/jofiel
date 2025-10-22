@@ -8,6 +8,11 @@ metadata:
 spec:
   owner: user:guest
   type: service
+  presentation:
+    buttonLabels:
+      backButtonText: "BACK"
+      createButtonText: "CREATE"
+      reviewButtonText: "REVIEW"
 
   # These parameters are used to generate the input form in the frontend, and are
   # used to gather input data for the execution of the template.
