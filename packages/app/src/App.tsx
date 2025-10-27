@@ -41,6 +41,7 @@ import { githubAuthApiRef } from '@backstage/core-plugin-api';
 import { TechRadarPage } from '@backstage-community/plugin-tech-radar';
 import { HomePage } from './components/home/HomePage';
 import { HomepageCompositionRoot } from '@backstage/plugin-home'
+import { BasicPluginPage } from '@internal/plugin-basic-plugin';
 
 
 const app = createApp({
@@ -113,6 +114,7 @@ const routes = (
       path="/tech-radar"
       element={<TechRadarPage width={1500} height={800} />}
     />
+    <Route path="/basic-plugin" element={<BasicPluginPage />} />
   </FlatRoutes>
 );
 
