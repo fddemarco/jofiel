@@ -57,6 +57,9 @@ import {
   EntityKubernetesContent,
   isKubernetesAvailable,
 } from '@backstage/plugin-kubernetes';
+import {
+    UselessFactsCard, isUselessFactAvailable
+} from '@internal/plugin-uselessfacts'
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -133,6 +136,14 @@ const overviewContent = (
     <Grid item md={6} xs={12}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
+
+    <EntitySwitch>
+        <EntitySwitch.Case if={isUselessFactAvailable}>
+            <Grid item md={4} xs={12} className="cardHeight">
+                <UselessFactsCard/>
+            </Grid>
+        </EntitySwitch.Case>
+    </EntitySwitch>
 
     <Grid item md={4} xs={12}>
       <EntityLinksCard />

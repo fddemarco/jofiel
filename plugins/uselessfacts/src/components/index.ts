@@ -1,0 +1,1 @@
+export { UselessFactCard } from "./UselessFactComponent";
